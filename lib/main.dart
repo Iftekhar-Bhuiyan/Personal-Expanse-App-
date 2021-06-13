@@ -1,4 +1,3 @@
-// ignore: avoid_web_libraries_in_flutter
 import 'package:flutter/material.dart';
 import 'package:flutter_prac_2/models/transaction.dart';
 import 'package:flutter_prac_2/widgets/user_transactions.dart';
@@ -8,7 +7,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_prac_2/models/transaction.dart';
-
 import './new_transaction.dart';
 import './transaction_list.dart';
 
@@ -32,9 +31,11 @@ class _UserTransactionsState extends State<UserTransactions> {
       date: DateTime.now(),
     );
 
-    setState(() {
-      _userTransaction.add(newTx);
-    });
+    setState(
+      () {
+        _userTransaction.add(newTx);
+      },
+    );
   }
 
   @override
