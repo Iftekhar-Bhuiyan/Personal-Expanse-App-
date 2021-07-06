@@ -48,7 +48,7 @@ class _NewTransactionState extends State<NewTransaction> {
       _selectedDate = pickedDate;
     });
   }
-
+ 
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -84,7 +84,7 @@ class _NewTransactionState extends State<NewTransaction> {
                         ? 'No Date Chosen!'
                         : DateFormat.yMd()),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: _presentDatePicker,
                       child: Text(
                         'Choose Date',
                         style: TextStyle(fontWeight: FontWeight.bold),

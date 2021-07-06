@@ -55,6 +55,8 @@ class TransactionList extends StatelessWidget {
                         transactions[index].date,
                       ),
                     ),
+                   trailing: IconButton(icon : Icon(Icons.delete), color: Theme.of(context).errorColor,)
+                    
                   ),
                 );
               },
